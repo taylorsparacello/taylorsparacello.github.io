@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+  <title>ATL Restaurant Crawl</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Work+Sans" rel="stylesheet">
+  <!-- Google CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Microsoft CDN -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  /*background: #232323;*/
+  background: rgba(239,245,251,1);
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  /*color: #aaaaaa;*/
+  color: #3e5969;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  /*color: #bbbbbb;*/
+  color: #749abd;
+  margin: 0px 0 70px 0;
+}
+p {
+  /*color: rgba(255,255,255,1);*/
+  /*background: black;*/
+  color: black;
+  background: rbga(198,211,223,1);
+  /*background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));*/
+  background: -webkit-linear-gradient(bottom, rgba(239,245,251,1), rgba(239,245,251,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+ opacity: 0; 
+}
+
+.show-description p {
+ height: 150px; 
+}
+
+.show-description small {
+ opacity: 1; 
+}
+
+.first{
+  background-image: url(https://i.imgur.com/poI8EH0.jpg);
+}
+.second{
+  background-image: url("https://i.imgur.com/pMfje0k.jpg");
+}
+
+
+.third{
+  background-image: url("https://i.imgur.com/IAnDysB.jpg");
+}
+.price {
+  float: right;
+}
+/* Responsive Layout: adjust text size and margins*/
+
+@media (max-width: 500px) {
+ h1 {
+   font-size: 50px;
+   margin-top:20px;
+   line-height: 40px;
+ }
+ 
+ h2 {
+  font-size: 20px;
+  margin: 20px 0 30px 0;
+ }
+ 
+ div {
+   margin: 20px 12px 0 12px;
+ }
+ 
+ p {
+   font-size: 20px;
+   line-height: 24px;
+   }
+   
+   small {
+    font-size: 16px; 
+   }
+
+}
+</style>
+
+</head>
+
+<body>
+<h1>atl restaurant crawl</h1>
+<h2>eating my way around ATL using the Atlanta Dining Passbook</h2>
+
+
+ <div class="second">
+  <p>Allora <span class="price">August 25, 2018</span><br />
+  <small>I stopped here for a weekend brunch with my mom, and I ordered Chicken and Biscuit which came with a buttermilk biscuit, chicken tenders, and sausage gravy. It was just the homemade, belly-filling food I was craving. The environment was welcoming and had a modern, industrial design. The music was trendy and really put the finishing touch on a perfect brunch spot!</small></p>
+</div>
+
+<div class="third">
+  <p>Kuroshio Midtown Sushi and Lounge <span class="price">August 24, 2018</span><br />
+  <small>Located in the heart of Midtown Atlanta, Kuroshio has some of the best sushi around. I started off my meal with the Japanese Hot Rock with six cuts of seasoned beef tenderloin paired with garlic ponzu sauce. I've never tried the hot rock before, but I won't go here without getting it next time! For my main course, I ordered a simple shrimp tempora sushi with crab stick and spicy mayo on top. Great food, great staff, great vibe. **This restaurant is not in the Atlanta Dining Passbook.</small></p>
+</div> 
+
+<div class="first">
+  <p>La Fonda Latina <span class="price">July 27, 2018</span><br />
+  <small>Bustling hangout with a patio serving amazing salsa, Cuban sandwiches, & other Mexican standards. Atmosphere was great; however the service was less than great. Pictured is the shrimp quesadilla with corn and cheese accompanied with black beans and rice. **This restaurant is not in the Atlanta Dining Passbook. </small></p>
+</div>
+
+
+
+ <!-- JavaScript: when banner is clicked, show the description -->
+<script>
+$('div').on('click', function() {
+  $(this).toggleClass('show-description');
+});
+</script>
+
+</body>

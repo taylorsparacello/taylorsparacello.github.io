@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ATL Restaurant Crawl</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Work+Sans" rel="stylesheet">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+      text-align: center;
+      background-color: #f1f1f1;
+      font-family: 'Work Sans', sans-serif;
+      padding: 15px;
+}
+
+    h1 {
+      font-size: 70px;
+      padding: 25px 0px 0px 40px;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+        h2{
+      font-size: 22px;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+        p {
+      font-family: 'Raleway', sans-serif;
+      font-weight: lighter;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+    background: hsla(0, 100%, 70%, 0.2);
+}
+
+/* Middle column */
+.column.middle {
+    width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    footer{
+      background-color: rgba(0,0,0,0.7);
+      padding: 10px;
+      text-align: center;
+      color: white;
+      clear: both;
+    }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>ATL Restaurant Crawl</h1>
+  <p>Just two college students eating their way around the ATL.</p>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+  <div class="column middle">
+    <h2>Restaurant 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+
+    <div class="column middle">
+    <h2>Restaurant 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+<footer>
+	<p>Last Updated: 7/26/2018</p>
+</footer>
+  
+</body>
+</html>
