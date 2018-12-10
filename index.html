@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <link href="/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="mainPage.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Work+Sans" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,177 +10,9 @@
 <!-- Microsoft CDN -->
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
-  <title>Taylor's Blog</title>
-  <style>
-    header {
-      text-align: center;
-      background: url("https://i.imgur.com/qsC5ixZ.jpg");
-      background-size: 1800px 250px;
-      color: white;
-    }
-    h1 {
-      font-size: 70px;
-      padding: 80px 0px 0px 80px;
-      font-family: 'Londrina Shadow', cursive;
-    }
-    h2{
-      font-size: 22px;
-      font-family: 'Work Sans', sans-serif;
-    }
-    h3 {
-      font-family: 'Work Sans', sans-serif;
-      font-size: 30px;
-      padding-left: 10px;
-    }
-    h4{
-      font-family: 'Work Sans', sans-serif;
-      font-size: 14px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
-      font-family: 'Raleway', sans-serif;
-      font-weight: lighter;
-
-    }
-
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-    p {
-      font-family: 'Raleway', sans-serif;
-      font-weight: lighter;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    .leftcolumn {
-      float: left;
-      width: 70%;
-      }
-
-    .rightcolumn {
-      float: left;
-      width: 25%;
-      padding-left: 20px;
-      }
-
-      img {
-        border-radius: 20px;
-      }
-
-    .card {
-        background-color: #f1f1f1;
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 15px;
-        margin-left: 10px;
-      }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .white {
-      color: white; text-decoration: none;
-    }
-
-    .black {
-      color: black; text-decoration: none;
-    }
-
-    .button-like1,
-    .button-like2,
-    .button-like3 {
-      border: 2px solid #8a8a8a;
-      background-color: transparent;
-      text-decoration: none;
-      padding: 0.5rem;
-      position: relative;
-      vertical-align: middle;
-      text-align: center;
-      display: inline-block;
-      border-radius: 3rem;
-      color: #8a8a8a;
-      transition: all 0.4s ease;
-      /* get rid of blue outline when you click the like button */
-      outline: none;
-    }
-
-    .button-like1 span,
-    .button-like2 span,
-    .button-like3 span{
-      margin-left: 0.5rem;
-    }
-
-    .button-like1 .fa, 
-    .button-like1 span,
-    .button-like2 .fa, 
-    .button-like2 span,
-    .button-like3 .fa, 
-    .button-like3 span{
-      transition: all 0.4s ease;
-    }
-
-
-    .button-like1:hover,
-    .button-like2:hover,
-    .button-like3:hover{
-      border-color: #cc4b37;
-    }
-
-    .button-like1:hover .fa, 
-    .button-like1:hover span,
-    .button-like2:hover .fa, 
-    .button-like2:hover span,
-    .button-like3:hover .fa, 
-    .button-like3:hover span{
-      color: #cc4b37;      
-    }
-
-    .liked {
-      background-color: #cc4b37;
-      border-color: #cc4b37;
-    }
-
-    .liked .fa, 
-    .liked span{
-      color: #fefefe;
-    }
-
-    .liked:hover {
-      background-color: #cc4b37;
-      border-color: #cc4b37;
-    }
-
-    .liked:hover .fa, 
-    .liked:hover span{
-      color: #fefefe;
-    }
-
-    .navbar a:hover {
-      color: rgb(116,160,211);
-    }
-
-    .rightnavbar a:hover {
-      text-decoration: underline;
-    }
-
-    footer{
-      background-color: rgba(0,0,0,0.7);
-      padding: 10px;
-      text-align: center;
-      color: white;
-      clear: both;
-    }
-
-    @charset "UTF-8";
-
-.rounded-social-buttons {
+  <title>Taylor's Travels</title>
+<style>
+  .rounded-social-buttons {
   text-align: left;
 }
 
@@ -239,41 +72,24 @@
   background: #fefefe;
   border-color: #125688;
 }
-
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-      }
-      li {
-        display: block;
-        padding: 5px;
-      }
-      body {
-        background: white;
-      }
-      .leftcolumn, .rightcolumn {
-        width: 100%;
-        padding: 0;
-      }
-    }
-  </style>
-
+</style>
 </head>
 <body>
   <header>
-    <h1>Taylor's Blog</h1>
+    <h1>TAYLOR'S TRAVELS</h1>
+    <h5>Just exploring.</h5>
     <div class="navbar">
     <ul>
-      <li><a href="ComingSoon.html" class="white">Georgia Tech Lorraine</a></li>
-      <li><a href="ATLcrawl.html" class="white">ATL Restaurant Crawl</a></li>
-      <li><a href="photoalbum.html" class="white">Photo Album</a></li>
+      <li><a href="gtl.html" class="black">Georgia Tech Lorraine</a></li>
+      <li><a href="ATLcrawl.html" class="black">ATL Restaurant Crawl</a></li>
+      <li><a href="#" class="black">Photo Album</a></li>
     </ul>
   </div>
   </header>
 
   <div class="row">
     <div class="leftcolumn">
-        <h3>Featured Food</h3>
+        <h3>Recent Posts</h3>
         <div class="card">
         <h2>The Shed BBQ & Blues Joint</h2>
         <h4>Ocean Springs, MS</h4>
@@ -292,20 +108,11 @@
   <button class="button button-like2"><i class="fa fa-heart"></i><span>Like</span></button>
 </div>
 
-
-  <h3>Recent Travel</h3>
-  <div class="card">
-  <h2>Gulf Shores, AL</h2>
-  <h4>1 Aug - 6 Aug</h4>
-    <img src="https://i.imgur.com/YfopeQO.jpg" style="width: 30%">
-  <p>Finally! I hit the beach only to be pummeled by waves taller than I am. The weather mellowed out after day 1 and was sunny and warm the rest of the trip. Activitiees included: parasailing, lounging, swimming, seashell hunting, sandcastle building, and that's about it because I'm on vacation. :)</p>
-  <button class="button button-like3"><i class="fa fa-heart"></i><span>Like</span></button>
-</div>
 </div>
 
 <div class="rightcolumn">
   <div class="rightnavbar">
-  <h2>About Me</h2>
+  <h3>About Me</h3>
   <img src="https://i.imgur.com/omOmu6q.jpg" title="source: imgur.com" style="width: 225px; height:150px";/>
   <p>Just a college student eating her way around Atlanta and the world!</p>
 
